@@ -3,8 +3,10 @@
     {{ partial "head.html" . }}
     <body>
         {{ partial "header.html" . }}
-        {{ block "main" . }}{{ end }}
-        {{ partial "footer.html" . }}
-		{{ partial "custom_footer.html" . }}
+	    <div id="page-wrapper">
+			{{ block "main" . }}{{ end }}
+        	{{ partial "footer.html" . }}
+			{{ partial "custom_footer.html" . }}
+		</div>
     </body>
 </html>
