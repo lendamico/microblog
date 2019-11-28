@@ -4,7 +4,10 @@
     <body>
         {{ partial "header.html" . }}
 	    <div id="page-wrapper">
+			<div class="wrap">
+				{{ partial "profile.html" . }}
 			{{ block "main" . }}{{ end }}
+		</div>
         	{{ partial "footer.html" . }}
 			{{ partial "custom_footer.html" . }}
 		</div>
